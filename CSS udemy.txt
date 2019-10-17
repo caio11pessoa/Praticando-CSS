@@ -1,0 +1,247 @@
+AULA 01 - Introdução
+Estética, complementa o HTML
+AULA 02 - Pré-requisitos
+ 1- conhecimento em HTML
+AULA 03 - O que é CSS?
+Cascading Style Sheet
+
+-> As Folhas deestilos em cascata (CSS) 
+são um conjunto de regras de formatação que controlam a aparência de uma página da Web.
+
+conceito básico = separar conteúdo da aparência
+
+ HTML 		+ 	      CSS = website
+Conteúdo 		    Aparência
+
+por que estilo em cascata?
+- Há várias formas de inserir modificações no estilo com CSS
+- Ordem de prioridade
+  ->Efeito cascata
+
+EFEITO CASCATA
+
+° folha deestilo padrão do navegador;			MENOR PRIORIDADE
+° folha de estilo do usuário (se existir);			|
+° folha de estilo do desenvolvedor;				|
+	-estilo externo (importado). preferido				|
+	-estilo incorporado (definido no head);			|
+	-estilo inline(dentro de um elemento);			V
+° Marcação !important;					MAIOR PRIORIDADE
+
+Há três formas:
+1. inline(style="")
+2. tag <style></style>
+3. importação/link
+
+inline (maior prioridade)
+-> feita diretamente na tag:
+	<div style="height:100px"></div>
+	<p style="color:red">Meu texto</p>
+//somente esse parágrafo terar a cor vermelha
+
+Tag <style>
+-> Códigos são declarados diretamente no código HTML através da tag <style>
+<head>
+	<style>
+		p{
+			color: red;
+
+		}
+	</style>
+</head>
+<body>
+	<p>Meu texto</p>
+</body>
+
+// nesse exemplo todos os parágrafos inseridos no texto terão a cor vermelha
+
+Importação
+-> Estilo importado de um arquivo ".css" separado
+<head>
+	<link rel="sylesheet" type="text/css" href="style.css(local do arquivo)" >
+</head>
+//maneira mais recomendada
+
+Sintaxe
+
+seletor {
+	declarações:valor;
+}
+ex:
+/*CSS*/
+
+body {
+	font-family: Arial;
+	font-style: italic;
+}
+
+p{
+	font-family: courier;
+	font-style: normal
+}
+
+- Seletores
+	->Classes
+	->ID's
+	->Tags
+° ID's
+	-> identificadores únicos
+	-> Declarados com #
+	-> URLs
+		. www.site.com/#id
+° Classes
+	-> Apresenta um estilo a um grupo de elementos
+	-> Declarado com .
+exemplos:
+	Plano de fundo
+-> Aplicados a body ou qualquer outra tag (div)
+-> inserindo uma cor
+	-background-color:#F4F4F4
+		//nunca use cores muito escuras ou saturadas!
+-> inserindo uma imagem
+	-background-image: url(app/img/bg.jpg[aqui fica o endereço])
+	Posição (position)
+->Define a posição de um elemento em uma página
+-> Essas coordenadas são definidas pelas propriedades:
+	-top
+	-left
+	-right
+	-bottom
+-> position:fixed
+	-Elemento fica fixo em uma mesma posição
+	EX.:menus
+-> position:relative
+	-Posiciona o elemento com base no canto superior esquerdo
+	-Float: left ou right
+	// Uma div relative NÃO sobrepõe outra
+-> Position:absolute
+	-Utiliza o canto superior esquerdo do elemento pai para se posicionar
+	-Se não estiver dentro de outro elemento, utiliza o body para se referenciar
+	//Uma div pode sobrepor outra
+
+Texto
+-> Fonte
+ 	-font-family:helvetica, arial;
+-> cor
+	-color: #111;
+-> Tamanho
+	-font-size:12px;
+-> Negrito
+	-font-weight:bold;
+-> Espaçamento entre linhas
+	-line-height: 1.5;
+
+Tamanho e espaçamento
+-> Largura
+	-width: 300px
+-> Altura
+	-height: 200px;
+	3 0 0 p x
+	____________
+      2	|	   |
+      0	|	   |
+      0	|	   |
+      p	|	   |
+      x	L__________]
+
+Box model
+div{
+	margin:10px;
+	padding:10px;
+	border: 10px solid #000;
+}
+//uma imagem de box model está no repositório
+
+
+top left bottom e right
+
+	-> margin: 20px 10px; (considera top e button 20px e lefr e right 10px)
+se declarar 4 é no sentido horário
+
+Eliminando configurações do browser
+*{
+	margin:0;
+	padding:0;
+	
+}
+
+AULA 04 - Prática: crie um arquivo CSS
+Exercício: crie um arquivo CSS
+	1.Salve com o nome "style.css";
+	2.Crie um arquivo HTML chamado "index.html";
+	3.Chame o arquivo CSS no arquivo HTML.
+		- <link rel="sytlesheet" type="text/css" href="style.css">
+AULA 06 - Seletores
+
+comentários no css
+	/*Comentário*/
+Regra Básica do CSS
+	->Seletor{
+		propriedade:valor;
+		propriedade2:valor2;
+	}
+o que é Seletor?
+Tag/Classes/ID's
+
+AULA 07 - Cores
+color: red;
+
+outra maneira de aplicar color
+	-> pelo valor rgb, é feita utilizando uma # após color:
+color: #990000 exemplo (inútio se você usa o vscode)
+
+cor de fundo
+backgound-color: (cor)
+//isso vai mudar apenas o fundo da tag específica
+
+Aumentar o tamanho da font
+font-size: valorpx;
+
+Alterar a font
+	-> por padrão, o browser utiliza TimesNewRoman
+font-family: fontedesejada
+Existem vários exemplos, é só pesquisar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
