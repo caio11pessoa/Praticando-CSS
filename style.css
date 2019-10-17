@@ -19,3 +19,7 @@ footer{
     background-color: blue;
     height: 80px;
 }
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
