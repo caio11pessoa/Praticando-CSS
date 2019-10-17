@@ -201,6 +201,113 @@ Alterar a font
 	-> por padrão, o browser utiliza TimesNewRoman
 font-family: fontedesejada
 Existem vários exemplos, é só pesquisar
+nome de font com duas palavaras utiliza-se aspas
+
+por padrão, Helvetica
+
+AULA 08 - Divs
+
+o browser insere um espaçamento encima do testo
+um espaçamento nativo
+é uma boa prática remover esse espaçamento
+
+seletor * quer dizer toda a página
+
+aprender a fazer o container
+
+    <head>
+
+    </head>
+
+    <div>
+        <div>
+
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+
+// básico de uma página
+
+header{
+background-color: green;
+height: 100px;
+}
+div#div_esquerda{
+    background-color: red;
+    height: 100px;
+}
+#div_direita{
+background-color: yellow;
+height: 100px;
+
+}
+footer{
+    background-color: blue;
+    height: 80px;
+}
+//css da página
+
+AULA 09 - div lado a lado
+
+min-height:(altura mínima em)px
+//a medida que o conteúdo cresce, a div também cresce
+
+largura
+width:(largura)%;
+
+para colocar as div um ao lado da outra
+ float: left;
+ float: right;
+porém, essa propriedade tem um problema
+ela força às duas divs de cima ficar distante da div de baixo(footer)
+o footer fica escondido atrás das divs
+
+para resolver esseproblema, utiliza-se o
+clear: both; na div abaixo, para reiniciar a partir dali
+o float
+
+AULA 10 - Entendendo a diferença entre margine padding
+dada uma div, margin é a "margem externa" e padding é a "margem interna"
+figura no repositório
+
+o padding, aumenta a distância do texto para as bordas, além disso, aumenta o tamanho total da div
+
+
+AULA 11 - Container
+
+uma forma de definir um tamanho para a página é definindo o container
+design responsivo bootstrap(pesquisar sobre)
+
+container é uma div que vai segurar todo mundo
+
+a div do container deve ser declarado com uma class, pois é desejável as vezes que se tenha mais de um container em uma página, logo se torna melhor que todos os containers possam ser "chamados" de uma vez só, por isso utilizamos uma class
+
+
+declarando uma class
+
+.container{
+	width: 960px
+	margin:0 auto
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
