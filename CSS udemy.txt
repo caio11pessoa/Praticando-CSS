@@ -294,8 +294,12 @@ declarando uma class
 	width: 960px
 	margin:0 auto
 }
+AULA 12 - Criando uma página estilizada
 
+<img src"">
+colocou o container para segurar apenas a imagem
 
+coloquei novos containers e estilizei melhor a página
 
 
 
