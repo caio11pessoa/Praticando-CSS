@@ -301,7 +301,10 @@ colocou o container para segurar apenas a imagem
 
 coloquei novos containers e estilizei melhor a página
 
+AULA 14- Inserindo imagens no background
 
+background-image : url('endereço')
+background-size: 100%
 
 
 
